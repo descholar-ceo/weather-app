@@ -44,6 +44,13 @@ textarea {
   padding: 0.5rem;
 }
 
+.main-container {
+  background: url('../images/main-bg.jpg') center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
 // results
 @mixin bg-specs {
   background-size: cover;
