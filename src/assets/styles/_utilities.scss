@@ -1,0 +1,227 @@
+// margins and paddings
+$spaceAmount: (0, 1, 2, 3, 4, 5);
+
+@each $space in $spaceAmount {
+  .margin-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .margin-x-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .margin-t-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  .margin-b-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  .margin-y-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .padding-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .padding-x-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+
+  .padding-y-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+// flex
+@mixin flex-specs ($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $justify;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+.active {
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
+.flex-horizontal-center {
+  @include flex-specs(row, center);
+}
+
+.flex-vertical-center {
+  @include flex-specs(column, center);
+}
+
+.flex-space-between {
+  @include flex-specs(row, space-between);
+}
+
+.flex-right {
+  @include flex-specs(row, flex-end);
+}
+
+.centered-horizontal {
+  margin: 0 auto;
+}
+
+.centered-h-v {
+  display: grid;
+  place-items: center;
+}
+
+.relative-element {
+  position: relative;
+}
+
+// buttons
+%button {
+  display: inline-block;
+  margin: 0.2rem;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.button-primary {
+  @extend %button;
+  @extend %rounded-corners-half;
+
+  border: none;
+  background-color: $primary-color;
+}
+
+.button-secondry {
+  @extend %button;
+  @extend %rounded-corners-half;
+
+  border: none;
+  background-color: $secondary-color;
+}
+
+.button-third {
+  @extend %button;
+  @extend %rounded-corners-half;
+
+  border: none;
+  background-color: $third-color;
+}
+
+.button-white {
+  @extend %button;
+  @extend %rounded-corners-half;
+
+  border: none;
+  background-color: $white-color;
+}
+
+.button-white-transparent {
+  @extend %button;
+
+  border: none;
+  background-color: $white-trasparent;
+}
+
+.button-primary-outline {
+  @extend %button;
+
+  border: 1px solid $primary-color;
+  background-color: $white-color;
+}
+
+.button-primary-outline:hover {
+  @extend %button;
+
+  border: 1px solid $primary-color;
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+// backgrounds
+.black-bg {
+  background-color: $black-color;
+}
+
+.primary-bg {
+  background-color: $primary-color;
+}
+
+.third-bg {
+  background-color: $third-color;
+}
+
+.white-bg {
+  background-color: $white-color;
+}
+
+.white-transparent-bg {
+  background-color: $white-trasparent;
+}
+
+.secondary-transparent-bg {
+  background-color: $secondary-transparent;
+}
+
+.third-transparent-bg {
+  background-color: $third-transparent;
+}
+
+.light-grey-transparent-bg {
+  background-color: $light-grey;
+}
+
+.greyish-bg {
+  background-color: $greyish-color;
+}
+
+.border-top-bottom-third {
+  border-top: 1px solid $third-color;
+  border-bottom: 1px solid $third-color;
+}
+
+.border-full {
+  border: 1px solid $third-color;
+}
+
+.border-greyish-full {
+  border: 1px solid $greyish-color;
+}
+
+.rounded-corners-1 {
+  border-radius: 1rem;
+}
+
+.rounded-corners-half,
+%rounded-corners-half {
+  border-radius: 0.5rem;
+}
+
+.border-radius-3,
+button,
+input,
+select {
+  border-radius: 3px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.circle-element {
+  border-radius: 100%;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+.box-with-shadows {
+  box-shadow: 4px 4px 8px 8px $black-transparent;
+}

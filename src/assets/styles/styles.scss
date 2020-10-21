@@ -1,0 +1,73 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  ul {
+    height: 100%;
+  }
+
+  li,
+  .fa {
+    color: $white-color;
+    cursor: pointer;
+  }
+}
+
+input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+// results
+@mixin bg-specs {
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+.meal-img {
+  height: 250px;
+  width: 300px;
+}
+
+.homepage-section {
+  background: url('../images/img-0.jpg') center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+@import 'utilities';
+@import 'texts';
+@import 'widths-heights';
+@import 'media-queries'

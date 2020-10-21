@@ -1,0 +1,65 @@
+// text colors
+.black-text {
+  color: $black-color;
+}
+
+.white-text {
+  color: $white-color;
+}
+
+.grey-text {
+  color: $third-color;
+}
+
+.primary-text {
+  color: $primary-color;
+}
+
+// font sizes
+.small-text {
+  font-size: 0.7rem;
+}
+
+.medium-text {
+  font-size: 0.8rem;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+.text-1-next {
+  font-size: 1.2rem;
+}
+
+.text-1-half {
+  font-size: 1.5rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.letter-spaced {
+  letter-spacing: 0;
+}
+
+.line-1-half {
+  line-height: 1.5;
+}
