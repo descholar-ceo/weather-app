@@ -1,0 +1,41 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "https://www.theodinproject.com/courses/javascript/lessons/weather-app",
+  "main": "src/index.js",
+  "repository": "https://github.com/descholar-ceo/weather-app",
+  "author": "descholar-ceo <emmanuellamugi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack -p --env production",
+    "dev": "webpack-dev-server --mode=development --env development --watch --open",
+    "debug": "webpack-dev-server  --open",
+    "start": "webpack-dev-server --env production --open",
+    "eslint-f": "npx eslint . --fix",
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
