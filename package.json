@@ -30,6 +30,7 @@
     "mini-css-extract-plugin": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
