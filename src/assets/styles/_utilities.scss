@@ -88,6 +88,7 @@ $spaceAmount: (0, 1, 2, 3, 4, 5);
   outline: none;
   padding: 0.5rem;
   cursor: pointer;
+  height: 40px;
 }
 
 .button-primary {
@@ -149,12 +150,12 @@ $spaceAmount: (0, 1, 2, 3, 4, 5);
   background-color: $black-color;
 }
 
-.primary-bg {
-  background-color: $primary-color;
+.black-transparent-bg {
+  background-color: $black-transparent;
 }
 
-.third-bg {
-  background-color: $third-color;
+.primary-bg {
+  background-color: $primary-color;
 }
 
 .white-bg {
