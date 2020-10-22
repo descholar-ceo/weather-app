@@ -1,22 +1,11 @@
-const handleSearch = (inputField) => {
+const handleSearch = async (inputField) => {
   const searchQuery = inputField.value;
-  fetch('https://openweatherapp.p.rapidapi.com/', {
-    mode: 'cors',
-    method: 'POST',
-    headers: {
-      'x-rapidapi-host': 'openweatherapp.p.rapidapi.com',
-      'x-rapidapi-key': 'bb3ebde477msh2bc5f9123f0cc95p1d6922jsn4f0b847ad367',
-      'content-type': 'application/x-www-form-urlencoded',
-    },
-    body: {},
-  })
-    .then(response => {
-      console.log(response);
-    })
-    .catch(err => {
-      console.log(err);
-    });
-  console.log(searchQuery);
+  const response = await fetch(
+    `${process.env.API_LINK}?q=${searchQuery}&appid=${process.env.API_KEY}`,
+    { mode: 'cors' },
+  );
+  const resJson = await response.json();
+  console.log(resJson);
 };
 
 export default handleSearch;

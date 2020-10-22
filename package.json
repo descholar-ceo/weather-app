@@ -16,9 +16,12 @@
     "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^4.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "babel-eslint": "^10.1.0",

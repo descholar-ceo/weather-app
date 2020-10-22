@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 require('dotenv').config();
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (env) => ({
   context: __dirname,
@@ -42,6 +43,7 @@ module.exports = (env) => ({
     ],
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebPackPlugin({
       title: 'ToDo App',
       template: path.resolve(__dirname, 'public/index.html'),
