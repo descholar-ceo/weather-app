@@ -8,6 +8,5 @@ const searchBtn = document.querySelector('#seacrh-btn-id');
 const locationInputField = document.querySelector('#location-input-field');
 const searchResultDiv = document.querySelector('#search-result-div');
 const unitsToggle = document.querySelector('#units-toggle');
-
-searchBtn.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle));
-unitsToggle.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle));
+searchBtn.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle, rootElt));
+unitsToggle.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle, rootElt));

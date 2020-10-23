@@ -1,7 +1,7 @@
 class WeatherSearch {
   static displayWeatherSearchSection = (rootElement) => {
     const weatherElt = `
-    <main class="main-page width-100 height-100">
+    <main class="main-page width-100 height-100" id="main-page">
       <section class="homepage-section width-100 padding-2 centered-h-v"> 
         <div class="white-transparent-bg padding-lg-half width-80 centered-horizontal black-text rounded-corners-1 box-with-shadows">
           <h1 class="centered-text black-text margin-2">Weather App: Get weather info from anywhere on the world!!!</h1>     

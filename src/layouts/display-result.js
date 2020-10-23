@@ -5,9 +5,10 @@ import {
 } from '../handlers/handle-search';
 import WeatherSearch from './weather-search';
 
-export const displayResult = async (inputField, outputBox, isCelcius) => {
+export const displayResult = async (mainContainer, inputField, outputBox, isCelcius) => {
   const res = await searchResultJson(inputField);
   outputBox.classList.add(customizeBackgroundColor(res.temp));
+  mainContainer.classList.add(customizeBackgroundColor(res.temp));
   let unit = '°C';
   if (isCelcius) {
     res.temp = convertCeliciusToFahreneit(res.temp);
@@ -24,9 +25,10 @@ export const displayResult = async (inputField, outputBox, isCelcius) => {
   outputBox.innerHTML = htmlToDisplay;
 };
 
-export const loadResult = (locationInputField, searchResultDiv, unitsToggle) => {
+export const loadResult = (locationInputField, searchResultDiv, unitsToggle, mainContainer) => {
   const classes = 'search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v';
+  mainContainer.setAttribute('class', 'main-container');
   searchResultDiv.setAttribute('class', classes);
   searchResultDiv.innerHTML = '<div class="loader"/>';
-  displayResult(locationInputField, searchResultDiv, unitsToggle.checked);
+  displayResult(mainContainer, locationInputField, searchResultDiv, unitsToggle.checked);
 };
