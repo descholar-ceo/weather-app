@@ -13,7 +13,8 @@ class WeatherSearch {
               id="location-input-field">
               <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
           </form>
-          <div class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text" id="search-result-div">
+          <div class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v" id="search-result-div">
+           
           </div>
       </div>
       </section>
@@ -35,6 +36,7 @@ class WeatherSearch {
           <div><span>Max temperature: </span><span>${weatherResult.maxTemp}°F</span></div>
           <div><span>Min temperature: </span><span>${weatherResult.minTemp}°F</span></div>
           <div><span>Pressure: </span><span>${weatherResult.pressure}hPa</span></div>
+          <div><span>Humidity: </span><span>${weatherResult.humidity}%</span></div>
       </div>
     `;
 
