@@ -28,7 +28,7 @@ class WeatherSearch {
     rootElement.insertAdjacentHTML('beforeend', weatherElt);
   }
 
-  static weatherCard = (weatherResult) => {
+  static weatherCard = (weatherResult, unit) => {
     const iconSrc = `https://openweathermap.org/img/wn/${weatherResult.icon}@2x.png`;
     const wCard = `
     <div><img src="${iconSrc}"/></div>
@@ -36,9 +36,9 @@ class WeatherSearch {
       <h2 class="centered-text">${weatherResult.name}, ${weatherResult.country}</h2>
       <div class="line-height centered-text">
           <div><span>Description: </span><span>${weatherResult.description}</span></div>
-          <div><span>Temperature: </span><span>${weatherResult.temp}°F</span></div>
-          <div><span>Max temperature: </span><span>${weatherResult.maxTemp}°F</span></div>
-          <div><span>Min temperature: </span><span>${weatherResult.minTemp}°F</span></div>
+          <div><span>Temperature: </span><span>${weatherResult.temp}${unit}</span></div>
+          <div><span>Max temperature: </span><span>${weatherResult.maxTemp}${unit}</span></div>
+          <div><span>Min temperature: </span><span>${weatherResult.minTemp}${unit}</span></div>
           <div><span>Pressure: </span><span>${weatherResult.pressure}hPa</span></div>
           <div><span>Humidity: </span><span>${weatherResult.humidity}%</span></div>
       </div>

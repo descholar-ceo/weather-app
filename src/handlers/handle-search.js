@@ -17,6 +17,9 @@ export const searchResultJson = async (inputField) => {
   const resJson = await searchResult.json();
   let res;
   if (resJson.cod === 200) {
+    resJson.main.temp = (resJson.main.temp - 273.15).toFixed(2);
+    resJson.main.temp_max = (resJson.main.temp_max - 273.15).toFixed(2);
+    resJson.main.temp_min = (resJson.main.temp_min - 273.15).toFixed(2);
     const {
       feels_like: realFeel,
       humidity,
@@ -51,12 +54,12 @@ export const searchResultJson = async (inputField) => {
 };
 
 export const customizeBackgroundColor = (temp) => {
-  if (temp > 100) {
+  if (temp > 30) {
     return 'hot-weather';
-  } if (temp <= 100 && temp >= 50) {
+  } if (temp <= 30 && temp >= 20) {
     return 'medium-wether';
   }
   return 'cold-weather';
 };
 
-// export default searchResultJson;
+export const convertCeliciusToFahreneit = (temp) => (temp * 1.8) + 32;
