@@ -23,8 +23,7 @@ class WeatherSearch {
           </form>
           <div
             class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v"
-            id="search-result-div">
-          </div>
+            id="search-result-div">Result appear here</div>
       </div>
       </section>
     </main>
