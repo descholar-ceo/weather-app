@@ -12,13 +12,18 @@ class WeatherSearch {
               type="text"
               id="location-input-field">
               <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
-              <label class="switch">
-                <input type="checkbox" id="units-toggle">
-                <span class="slider round"></span>
-              </label>
+              <div class="centered-horizontal">
+                <span class="bold-text">°C</span>
+                <span class="switch">
+                  <input type="checkbox" id="units-toggle">
+                  <span class="slider round"></span>
+                </span>
+                <span class="bold-text">°F</span>
+              </div>
           </form>
-          <div class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v" id="search-result-div">
-           
+          <div
+            class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v"
+            id="search-result-div">
           </div>
       </div>
       </section>
