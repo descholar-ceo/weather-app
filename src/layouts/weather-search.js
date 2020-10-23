@@ -13,7 +13,7 @@ class WeatherSearch {
               id="location-input-field">
             <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
           </form>
-          <div class="search-result width-60 rounded-corners-1 white-text padding-2" id="search-result-div">
+          <div class="search-result width-30 rounded-corners-1 white-text padding-1" id="search-result-div">
           
           </div>
       </div>
