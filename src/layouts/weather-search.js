@@ -5,15 +5,15 @@ class WeatherSearch {
       <section class="homepage-section width-100 padding-2 centered-h-v"> 
         <div class="white-transparent-bg padding-lg-half width-80 centered-horizontal black-text rounded-corners-1 box-with-shadows">
           <h1 class="centered-text black-text margin-2">Weather App: Get weather info from anywhere on the world!!!</h1>     
-          <form class="width-90 centered-horizontal">
-            <input
+          <form class="width-60 centered-horizontal  flex-horizontal-center">
+              <input
               placeholder="Enter the name of the city here... "
-              class="width-80 rounded-corners-half"
+              class="width-60 rounded-corners-half centered-text text-1-next"
               type="text"
               id="location-input-field">
-            <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
+              <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
           </form>
-          <div class="search-result width-30 rounded-corners-1 white-text padding-1" id="search-result-div">
+          <div class="search-result width-30 rounded-corners-1 white-text padding-1 centered-text" id="search-result-div">
           </div>
       </div>
       </section>
@@ -24,15 +24,17 @@ class WeatherSearch {
   }
 
   static weatherCard = (weatherResult) => {
+    const iconSrc = `https://openweathermap.org/img/wn/${weatherResult.icon}@2x.png`;
     const wCard = `
+    <div><img src="${iconSrc}"/></div>
+    <div><span>${weatherResult.main}</span></div>
       <h2 class="centered-text">${weatherResult.name}, ${weatherResult.country}</h2>
-      <div class="line-height">
-          <div><span>Main weather: </span><span>${weatherResult.main}</span></div>
+      <div class="line-height centered-text">
           <div><span>Description: </span><span>${weatherResult.description}</span></div>
           <div><span>Temperature: </span><span>${weatherResult.temp}°F</span></div>
           <div><span>Max temperature: </span><span>${weatherResult.maxTemp}°F</span></div>
           <div><span>Min temperature: </span><span>${weatherResult.minTemp}°F</span></div>
-          <div><span>Pressure: </span><span>${weatherResult.pressure}</span></div>
+          <div><span>Pressure: </span><span>${weatherResult.pressure}hPa</span></div>
       </div>
     `;
 
