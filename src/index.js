@@ -9,6 +9,7 @@ const locationInputField = document.querySelector('#location-input-field');
 const searchResultDiv = document.querySelector('#search-result-div');
 
 searchBtn.addEventListener('click', () => {
+  searchResultDiv.setAttribute('class', 'search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v');
   searchResultDiv.innerHTML = '<div class="loader"/>';
   displayResult(locationInputField, searchResultDiv);
 });

@@ -241,3 +241,18 @@ select {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.hot-weather {
+  background: linear-gradient(to bottom right, rgba(1, 21, 58, 0.7), rgba(243, 11, 11, 0.9));
+  background-position: center;
+}
+
+.medium-weather {
+  background: linear-gradient(to bottom right, rgba(53, 1, 58, 0.7), rgba(0, 0, 0, 0.9));
+  background-position: center;
+}
+
+.cold-weather {
+  background: linear-gradient(to bottom right, rgba(13, 13, 14, 0.7), rgba(202, 184, 184, 0.9));
+  background-position: center;
+}

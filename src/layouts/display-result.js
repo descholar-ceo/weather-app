@@ -1,4 +1,4 @@
-import searchResultJson from '../handlers/handle-search';
+import { customizeBackgroundColor, searchResultJson } from '../handlers/handle-search';
 import WeatherSearch from './weather-search';
 
 const displayResult = async (inputField, outputBox) => {
@@ -9,6 +9,7 @@ const displayResult = async (inputField, outputBox) => {
   } else {
     htmlToDisplay = res.message;
   }
+  outputBox.classList.add(customizeBackgroundColor(res.temp));
   outputBox.innerHTML = htmlToDisplay;
 };
 

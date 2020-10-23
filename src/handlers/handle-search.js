@@ -12,7 +12,7 @@ const handleSearch = async (inputField) => {
   return res;
 };
 
-const searchResultJson = async (inputField) => {
+export const searchResultJson = async (inputField) => {
   const searchResult = await handleSearch(inputField);
   const resJson = await searchResult.json();
   let res;
@@ -50,4 +50,13 @@ const searchResultJson = async (inputField) => {
   return res;
 };
 
-export default searchResultJson;
+export const customizeBackgroundColor = (temp) => {
+  if (temp > 100) {
+    return 'hot-weather';
+  } if (temp <= 100 && temp >= 50) {
+    return 'medium-wether';
+  }
+  return 'cold-weather';
+};
+
+// export default searchResultJson;
