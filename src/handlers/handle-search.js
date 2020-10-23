@@ -25,13 +25,12 @@ const searchResultJson = async (inputField) => {
       temp_max: maxTemp,
       temp_min: minTemp,
     } = resJson.main;
-    const { name } = resJson;
-    const {
-      country,
-    } = resJson.sys;
+    const { name, cod } = resJson;
+    const { country } = resJson.sys;
     const [details] = resJson.weather;
     const { main, description, icon } = details;
     res = {
+      cod,
       realFeel,
       humidity,
       pressure,
@@ -45,7 +44,7 @@ const searchResultJson = async (inputField) => {
       icon,
     };
   } else {
-    res = { message: resJson.message };
+    res = { cod: 404, message: resJson.message };
   }
 
   return res;
