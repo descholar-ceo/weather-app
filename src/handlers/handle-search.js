@@ -45,7 +45,7 @@ const searchResultJson = async (inputField) => {
       icon,
     };
   } else {
-    res = resJson.message;
+    res = { message: resJson.message };
   }
 
   return res;
