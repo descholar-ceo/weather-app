@@ -14,10 +14,10 @@ class WeatherSearch {
               <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
               <div class="centered-horizontal">
                 <span class="bold-text">°C</span>
-                <span class="switch">
+                <label class="switch">
                   <input type="checkbox" id="units-toggle">
                   <span class="slider round"></span>
-                </span>
+                </label>
                 <span class="bold-text">°F</span>
               </div>
           </form>
