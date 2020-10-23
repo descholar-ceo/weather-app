@@ -57,7 +57,7 @@ export const customizeBackgroundColor = (temp) => {
   if (temp > 30) {
     return 'hot-weather';
   } if (temp <= 30 && temp >= 20) {
-    return 'medium-wether';
+    return 'medium-weather';
   }
   return 'cold-weather';
 };
