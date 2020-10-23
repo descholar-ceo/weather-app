@@ -14,7 +14,6 @@ class WeatherSearch {
             <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
           </form>
           <div class="search-result width-30 rounded-corners-1 white-text padding-1" id="search-result-div">
-          
           </div>
       </div>
       </section>
@@ -27,12 +26,12 @@ class WeatherSearch {
   static weatherCard = (weatherResult) => {
     const wCard = `
       <h2 class="centered-text">${weatherResult.name}, ${weatherResult.country}</h2>
-      <div>
+      <div class="line-height">
           <div><span>Main weather: </span><span>${weatherResult.main}</span></div>
-          <div><span>Dscription: </span><span>${weatherResult.description}</span></div>
-          <div><span>Temperature: </span><span>${weatherResult.temp}</span></div>
-          <div><span>Max temperature: </span><span>${weatherResult.maxTemp}</span></div>
-          <div><span>Min temperature: </span><span>${weatherResult.minTemp}</span></div>
+          <div><span>Description: </span><span>${weatherResult.description}</span></div>
+          <div><span>Temperature: </span><span>${weatherResult.temp}°F</span></div>
+          <div><span>Max temperature: </span><span>${weatherResult.maxTemp}°F</span></div>
+          <div><span>Min temperature: </span><span>${weatherResult.minTemp}°F</span></div>
           <div><span>Pressure: </span><span>${weatherResult.pressure}</span></div>
       </div>
     `;
