@@ -1,5 +1,5 @@
 import './assets/styles/styles.scss';
-import displayResult from './layouts/display-result';
+import { loadResult } from './layouts/display-result';
 import WeatherSearch from './layouts/weather-search';
 
 const rootElt = document.querySelector('#root');
@@ -9,12 +9,5 @@ const locationInputField = document.querySelector('#location-input-field');
 const searchResultDiv = document.querySelector('#search-result-div');
 const unitsToggle = document.querySelector('#units-toggle');
 
-const loadResult = () => {
-  searchResultDiv.setAttribute('class', 'search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v');
-  searchResultDiv.innerHTML = '<div class="loader"/>';
-  displayResult(locationInputField, searchResultDiv, unitsToggle.checked);
-};
-
-searchBtn.addEventListener('click', () => loadResult());
-
-unitsToggle.addEventListener('click', () => loadResult());
+searchBtn.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle));
+unitsToggle.addEventListener('click', () => loadResult(locationInputField, searchResultDiv, unitsToggle));

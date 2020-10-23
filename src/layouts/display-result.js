@@ -1,7 +1,11 @@
-import { convertCeliciusToFahreneit, customizeBackgroundColor, searchResultJson } from '../handlers/handle-search';
+import {
+  convertCeliciusToFahreneit,
+  customizeBackgroundColor,
+  searchResultJson,
+} from '../handlers/handle-search';
 import WeatherSearch from './weather-search';
 
-const displayResult = async (inputField, outputBox, isCelcius) => {
+export const displayResult = async (inputField, outputBox, isCelcius) => {
   const res = await searchResultJson(inputField);
   outputBox.classList.add(customizeBackgroundColor(res.temp));
   let unit = '°C';
@@ -20,4 +24,9 @@ const displayResult = async (inputField, outputBox, isCelcius) => {
   outputBox.innerHTML = htmlToDisplay;
 };
 
-export default displayResult;
+export const loadResult = (locationInputField, searchResultDiv, unitsToggle) => {
+  const classes = 'search-result width-30 rounded-corners-1 white-text padding-1 centered-text centered-h-v';
+  searchResultDiv.setAttribute('class', classes);
+  searchResultDiv.innerHTML = '<div class="loader"/>';
+  displayResult(locationInputField, searchResultDiv, unitsToggle.checked);
+};
