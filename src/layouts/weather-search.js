@@ -13,7 +13,7 @@ class WeatherSearch {
               id="location-input-field">
               <button id="seacrh-btn-id" class="button-primary white-text width-10" type="button">Search</button>
               <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="units-toggle">
                 <span class="slider round"></span>
               </label>
           </form>
