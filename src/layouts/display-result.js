@@ -3,6 +3,7 @@ import WeatherSearch from './weather-search';
 
 const displayResult = async (inputField, outputBox, isCelcius) => {
   const res = await searchResultJson(inputField);
+  outputBox.classList.add(customizeBackgroundColor(res.temp));
   let unit = '°C';
   if (isCelcius) {
     res.temp = convertCeliciusToFahreneit(res.temp);
@@ -16,7 +17,6 @@ const displayResult = async (inputField, outputBox, isCelcius) => {
   } else {
     htmlToDisplay = res.message;
   }
-  outputBox.classList.add(customizeBackgroundColor(res.temp));
   outputBox.innerHTML = htmlToDisplay;
 };
 

@@ -62,4 +62,4 @@ export const customizeBackgroundColor = (temp) => {
   return 'cold-weather';
 };
 
-export const convertCeliciusToFahreneit = (temp) => (temp * 1.8) + 32;
+export const convertCeliciusToFahreneit = (temp) => ((temp * 1.8) + 32).toFixed(2);
