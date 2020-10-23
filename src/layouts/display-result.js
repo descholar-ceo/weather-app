@@ -1,8 +1,8 @@
-import handleSearch from '../handlers/handle-search';
+import searchResultJson from '../handlers/handle-search';
 import WeatherSearch from './weather-search';
 
 const displayResult = async (inputField, outputBox) => {
-  const res = await handleSearch(inputField);
+  const res = await searchResultJson(inputField);
   outputBox.innerHTML = WeatherSearch.weatherCard(res);
 };
 
