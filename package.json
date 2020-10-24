@@ -11,10 +11,9 @@
     "build": "webpack -p --env production",
     "dev": "webpack-dev-server --mode=development --env development --watch --open",
     "debug": "webpack-dev-server  --open",
-    "start": "webpack-dev-server --env production --open",
     "eslint-f": "npx eslint . --fix",
     "stylelint-f": "npx stylelint **/*.{css,scss} --fix",
-    "run-heroku": "yarn build && node server.js"
+    "start": "yarn build && node server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
