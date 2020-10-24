@@ -2,10 +2,11 @@ const handleSearch = async (inputField) => {
   const searchQuery = inputField.value;
   let res;
   try {
-    res = await fetch(
+    const mRes = await fetch(
       `${process.env.API_LINK}?q=${searchQuery}&appid=${process.env.API_KEY}`,
       { mode: 'cors' },
     );
+    res = await mRes.json();
   } catch (err) {
     res = err;
   }
@@ -13,8 +14,7 @@ const handleSearch = async (inputField) => {
 };
 
 export const searchResultJson = async (inputField) => {
-  const searchResult = await handleSearch(inputField);
-  const resJson = await searchResult.json();
+  const resJson = await handleSearch(inputField);
   let res;
   if (resJson.cod === 200) {
     resJson.main.temp = (resJson.main.temp - 273.15).toFixed(2);
