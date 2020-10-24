@@ -89,7 +89,6 @@ input:checked + .slider::before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -98,7 +97,6 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-// results
 @mixin bg-specs {
   background-size: cover;
   height: 400px;
