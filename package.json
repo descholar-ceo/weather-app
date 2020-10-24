@@ -13,7 +13,7 @@
     "debug": "webpack-dev-server  --open",
     "eslint-f": "npx eslint . --fix",
     "stylelint-f": "npx stylelint **/*.{css,scss} --fix",
-    "start": "yarn build && node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
