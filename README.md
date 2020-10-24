@@ -7,7 +7,7 @@ This project is an implementation of a weather app.
 This project was done mainly for learning purposes, the aim was to practice using javascript async/await and working with APIs using fetch method. The project's specifications are listed on [The odin project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## Screenshot
-![demo picture](./src/assets/img/todo-scrsht.png)
+![demo picture](./src/assets/images/weather-app-screenshot.png)
 
 ## Built with
 - HTML5
