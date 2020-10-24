@@ -1,10 +1,10 @@
-# todo-list
-![Linters](https://github.com/descholar-ceo/todo-list/workflows/Linters/badge.svg)
+# weather-app
+![Linters](https://github.com/descholar-ceo/weather-app/workflows/Linters/badge.svg)
 
 ## Project description
-This project is an implementation of a todo-list web page.
+This project is an implementation of a weather app.
 
-This project was done mainly for learning purposes, the aim was to practice using javascript factories/classes/constructors. The project's specifications are listed on [The odin project](https://www.theodinproject.com/courses/javascript/lessons/todo-list)
+This project was done mainly for learning purposes, the aim was to practice using javascript async/await and working with APIs using fetch method. The project's specifications are listed on [The odin project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 
 ## Screenshot
 ![demo picture](./src/assets/img/todo-scrsht.png)
@@ -13,22 +13,14 @@ This project was done mainly for learning purposes, the aim was to practice usin
 - HTML5
 - CSS3
 - Vanilla Javascript
-- Webpack js framework
-- Javascript design patterns
+- Webpack
 
 ## Features
-- This has a home page, where users can access the app's features
-- User can 
-    - create a todo
-    - edit a todo
-    - create new projects
-    - view all projects
-    - view all todos in each project
-    - remove a todo from a project
-    - delete a todo
+  - Search the weather info of any city on the earth
+  - Convert the gotten result from degrees celcius to fahreneit
 
 ## Deployment
-[ToDo List app on netlify](https://gracious-edison-c209da.netlify.app)
+[ToDo List app on netlify](https://suspicious-meitner-8919b0.netlify.app)
 
 ## Running and testing it locally
 
@@ -37,7 +29,7 @@ This project was done mainly for learning purposes, the aim was to practice usin
 - [Yarn](https://yarnpkg.com/) or just the default npm which comes with NodeJS
 
 ### Setup
-- Run `git clone https://github.com/descholar-ceo/todo-list && cd todo-list` to get a copy of source codes on your local computer and to navigate inside the project directory
+- Run `git clone https://github.com/descholar-ceo/weather-app && cd weather-app` to get a copy of source codes on your local computer and to navigate inside the project directory
 - Run `yarn install`
 - Run `yarn build`
 
@@ -51,16 +43,16 @@ This project was done mainly for learning purposes, the aim was to practice usin
 
 There are two ways of contributing to this project:
 
-1.  If you see something wrong or not working, please check [the issue tracker section](https://github.com/descholar-ceo/todo-list/issues), if that problem you met is not in already opened issues then open a new issue by clicking on `new issue` button.
+1.  If you see something wrong or not working, please check [the issue tracker section](https://github.com/descholar-ceo/weather-app/issues), if that problem you met is not in already opened issues then open a new issue by clicking on `new issue` button.
 
 2.  If you have a solution to that, and you are willing to work on it, follow the below steps to contribute:
     1.  Fork this repository
-    1.  Clone it on your local computer by running `git clone https://github.com/your-username/todo-list.git` __Replace *your username* with the username you use on github__
+    1.  Clone it on your local computer by running `git clone https://github.com/your-username/weather-app.git` __Replace *your username* with the username you use on github__
     1.  Open the cloned repository which appears as a folder on your local computer with your favorite code editor
     1.  Create a separate branch off the *master branch*,
     1.  Write your codes which fix the issue you found
     1.  Commit and push the branch you created
-    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/descholar-ceo/todo-list)
+    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/descholar-ceo/weather-app)
 
 ## Author
 
