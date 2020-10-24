@@ -13,11 +13,13 @@
     "debug": "webpack-dev-server  --open",
     "start": "webpack-dev-server --env production --open",
     "eslint-f": "npx eslint . --fix",
-    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix",
+    "run-heroku": "yarn build && node server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^4.0.0",
+    "express": "^4.17.1",
     "path": "^0.12.7"
   },
   "devDependencies": {
