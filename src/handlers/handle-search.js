@@ -1,9 +1,11 @@
 const handleSearch = async (inputField) => {
+  const API_LINK = 'https://api.openweathermap.org/data/2.5/weather';
+  const API_KEY = '596e5a75467855ada6dafa4c2d013e15';
   const searchQuery = inputField.value;
   let res;
   try {
     const mRes = await fetch(
-      `${process.env.API_LINK}?q=${searchQuery}&appid=${process.env.API_KEY}`,
+      `${API_LINK}?q=${searchQuery}&appid=${API_KEY}`,
       { mode: 'cors' },
     );
     res = await mRes.json();
