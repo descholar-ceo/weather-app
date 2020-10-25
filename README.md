@@ -33,11 +33,11 @@ This project was done mainly for learning purposes, the aim was to practice usin
 - Run `git clone https://github.com/descholar-ceo/weather-app && cd weather-app` to get a copy of source codes on your local computer and to navigate inside the project directory
 - Run `yarn install`
 - Run `yarn build`
-- Create a file called `.env` add `PORT` in the same format of `.env.example`
+- Create a file called `.env` add `PORT=8080` or any other number you want
 
 ### Usage
 - Run `yarn start` or `npm start` to start this project 
-- Go in the browser and access it on `localhost:<PORT_YOU_PRECISED_IN_ENV_FILE>`
+- Go in the browser and access it on `localhost:8080` or `<ANY_OTHER_PORT_NUMBER_YOU_PRECISED_IN_ENV_FILE>`
 
 ### Tests
 - No test yet
