@@ -20,8 +20,8 @@ This project was done mainly for learning purposes, the aim was to practice usin
   - Convert the gotten result from degrees celcius to fahreneit
 
 ## Deployment
-- [Wearher app on netlify](https://weather-app-descholar.netlify.app)
-- [Wearher app on heroku](https://weather-app-descholar.heroku.com)
+- [Weather app on netlify](https://weather-app-descholar.netlify.app)
+- [Weather app on heroku](https://weather-app-descholar.heroku.com)
 
 ## Running and testing it locally
 
