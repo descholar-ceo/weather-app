@@ -11,14 +11,18 @@
     "build": "webpack -p --env production",
     "dev": "webpack-dev-server --mode=development --env development --watch --open",
     "debug": "webpack-dev-server  --open",
-    "start": "webpack-dev-server --env production --open",
     "eslint-f": "npx eslint . --fix",
-    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix",
+    "start": "node server.js"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^5.0.0",
@@ -30,6 +34,7 @@
     "mini-css-extract-plugin": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",

@@ -1,0 +1,129 @@
+// medium screens
+@media screen and (min-width: 768px) {
+  .width-md-90 {
+    width: 90%;
+  }
+
+  .width-md-60 {
+    width: 60%;
+  }
+
+  .width-md-30 {
+    width: 30%;
+  }
+
+  .hidden-sm {
+    display: inline-block;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+
+  .flex-md-horizontal-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .col-md-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .col-md-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .centered-md-horizontal {
+    margin: 0 auto;
+  }
+}
+
+// lage screens
+@media screen and (min-width: 1024px) {
+  .hidden-md {
+    display: block;
+  }
+
+  .width-lg-50 {
+    width: 50%;
+  }
+
+  .width-lg-70 {
+    width: 70%;
+  }
+
+  .text-1-lg-next {
+    font-size: 2rem;
+  }
+
+  .col-lg-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .col-lg-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .flex-lg-horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ppic {
+    height: 100%;
+  }
+
+  .individual-lg-project {
+    height: 500px;
+    width: 900px;
+    background-color: $light-grey;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 4px 4px 8px 8px $third-transparent;
+  }
+
+  .project-card-header {
+    background-color: $greyish-color;
+    height: 30px;
+    width: 900px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      margin-left: 10px;
+    }
+
+    .close-btn {
+      background-color: $red-color;
+    }
+
+    .restore-btn {
+      background-color: $orange-color;
+    }
+
+    .minimize-btn {
+      background-color: $green-color;
+    }
+  }
+}

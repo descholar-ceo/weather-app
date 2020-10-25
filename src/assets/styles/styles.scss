@@ -1,0 +1,109 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.search-result {
+  height: 380px;
+  margin: 2rem auto 2rem auto;
+  background-color: $primary-color;
+}
+
+.switch {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black-color;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  bottom: -2px;
+  left: 8px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $primary-color;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $primary-color;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+@mixin bg-specs {
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+@import 'utilities';
+@import 'texts';
+@import 'widths-heights';
+@import 'media-queries'
